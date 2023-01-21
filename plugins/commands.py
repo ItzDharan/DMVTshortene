@@ -45,13 +45,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🪶 ADD ME TO YOUR GROUP 🪶', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/@TNThirai'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/Dailymvtamil')
+            InlineKeyboardButton('🪄 MAIN CHANNEL 🪄', url='https://t.me/Dailymvtamil'),
+            InlineKeyboardButton('↪️ BACKUP CHANNEL ↩️', url='https://t.me/+CJK-QugP7JgxY2I1')
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('🧧 WEB SERIES 🧧', url='https://t.me/+wf1AhJsXhEhhMThl')
+            ],[
+            
+            InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -70,7 +73,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "🔥 JOIN UPDATE CHENNAI 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -91,13 +94,22 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🪶 ADD ME TO YOUR GROUP 🪶', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/@TNThirai'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/aidmvt')
+
+            InlineKeyboardButton('🪄 MAIN CHANNEL 🪄', url='https://t.me/Dailymvtamil'),
+
+            InlineKeyboardButton('↪️ BACKUP CHANNEL ↩️', url='https://t.me/+CJK-QugP7JgxY2I1')
+
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+
+            InlineKeyboardButton('🧧 WEB SERIES 🧧', url='https://t.me/+wf1AhJsXhEhhMThl')
+
+            ],[
+            InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
+
+            InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
