@@ -108,6 +108,9 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
+            InlineKeyboardButton(text="🪄MAIN CHANNEL🪄", url='https://t.me/DailyMvTamil')
+        ]
+        [
             InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/DailyMvTamil/334')
         ]
     )
@@ -432,13 +435,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🪶 ADD ME YOU GROUP 🪶, url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/@TNThirai'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/AiDMVT')
+            InlineKeyboardButton('🪄 MAIN CHANNEL 🪄', url='https://t.me/DailyMvTamil'),
+            InlineKeyboardButton('↪️ BACKUP CHANNEL ↩️', url='https://t.me/+CJK-QugP7JgxY2I1')
         ], [
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -733,7 +736,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n 🙂 Correct Type Movie Name If You Correct Type Movie name Skip This Message ✉️\n\nᴇxᴀᴍᴘʟᴇ : \n\n Enter Only Movie Name 👉:- Thiruchitrambalam 2022"
+        cap = f"REQUEST MOVIE NAME: <code>{search}</code>\n\n\n 🙂 Correct Type Movie Name If You Correct Type Movie name Skip This Message ✉️\n\nᴇxᴀᴍᴘʟᴇ : \n\n Enter Only Movie Name 👉:- Thiruchitrambalam 2022"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
