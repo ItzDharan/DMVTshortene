@@ -48,7 +48,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 CUSTOM_FILE_IMAGE = environ.get ("CUSTOM_FILE_IMAGE", "IMAGE <code>https://telegra.ph/file/b3d4320131af3222e4016.jpg</code> </b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎟 𝐓𝐢𝐭𝐥𝐞 ==>>  {title} \n📆 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 ==>> {year} \n𝐆𝐞𝐧𝐫𝐞𝐬 ==>> {genres} \n✨ 𝐑𝐚𝐭𝐢𝐧𝐠 ==>> {rating} | 𝐈𝐌𝐃𝐁\n🎭
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎟 𝐓𝐢𝐭𝐥𝐞 : {title} \n📆 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 : {year} \n𝐆𝐞𝐧𝐫𝐞𝐬 : {genres} \n✨ Rating : {rating} IMDB\n
                             ©️ 𝐔𝐏𝐋𝐎𝐀𝐃 𝐁𝐘: @DailyMvTamil")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
