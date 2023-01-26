@@ -52,7 +52,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('↪️ BACKUP CHANNEL ↩️', url='https://t.me/+CJK-QugP7JgxY2I1')
             ],[
-           
             InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
         ]]
@@ -95,20 +94,13 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('🪶 ADD ME TO YOUR GROUP 🪶', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-
             ],[
-
             InlineKeyboardButton('🪄 MAIN CHANNEL 🪄', url='https://t.me/Dailymvtamil'),
-
             InlineKeyboardButton('🧧 WEB SERIES 🧧', url='https://t.me/+wf1AhJsXhEhhMThl')
-
             ],[
-
             InlineKeyboardButton('↪️ BACKUP CHANNEL ↩️', url='https://t.me/+CJK-QugP7JgxY2I1')
-
             ],[
             InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
-
             InlineKeyboardButton('♻️ ABOUT ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
