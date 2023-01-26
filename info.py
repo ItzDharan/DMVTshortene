@@ -42,10 +42,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'AiDMVT')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🎟 <code>{file_name}</code>\n\n<b>Size:</b> {file_size}\n\n<b>JOIN NOW:</b> [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 CUSTOM_FILE_IMAGE = environ.get ("CUSTOM_FILE_IMAGE", "IMAGE <code>https://telegra.ph/file/b3d4320131af3222e4016.jpg</code> </b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🔎 Query: {query}</b>\n\n<b>🎟 Title: <a href={url}>{title}({year})</a></b>\n<b>🎭 Genres: {genres}</b>\n<b>🌟 Rating: {rating} / 10 | IMDB</b>\n‌‌‌‌\n<b>©Uploded By: @DailyMvTamil</b>\n")
@@ -56,7 +56,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
