@@ -22,7 +22,7 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b3d4320131af3222e4016.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/3d6256d66bd875b114017.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1762656188').split()]
@@ -48,7 +48,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJOIN NOW: [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 CUSTOM_FILE_IMAGE = environ.get ("CUSTOM_FILE_IMAGE", "IMAGE <code>https://telegra.ph/file/b3d4320131af3222e4016.jpg</code> </b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🔎Query: {query}</b>\n\n<b>🎟 Title: <a href={url}>{title}</a></b>\n<b>📆 Year: <a href={url}/releaseinfo>{year}</a><\b>\n<b>🎭 Genres: {genres}</b>\n<b>🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>\n‌‌‌‌\n<b>© Uploded By: @DailyMvTamil</b>\n")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🔎 Query: {query}</b>\n\n<b>🎟 Title: <a {title}{year}</a></b>\n<b>🎭 Genres: {genres}</b>\n<b>🌟 Rating: <a {rating}</a> / 10</b>\n‌‌‌‌\n<b>© Uploded By: @DailyMvTamil</b>\n")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
