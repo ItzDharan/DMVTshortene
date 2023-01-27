@@ -867,5 +867,5 @@ async def manual_filters(client, message, text=True):
                     logger.exception(e)
                 break
     else:
-        return False
+        return True
    
