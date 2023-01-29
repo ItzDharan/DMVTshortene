@@ -50,8 +50,8 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file
 CUSTOM_FILE_IMAGE = environ.get ("CUSTOM_FILE_IMAGE", "IMAGE <code>https://telegra.ph/file/b3d4320131af3222e4016.jpg</code> </b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🔎 Query: {query}</b>\n\n<b>🎟 Title: <a href={url}>{title}({year})</a></b>\n<b>🎭 Genres: {genres}</b>\n<b>🌟 Rating: {rating} / 10 | IMDB</b>\n‌‌‌‌\n<b>©Uploded By: @DailyMvTamil</b>\n")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", else None)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True")), True)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
