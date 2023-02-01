@@ -49,7 +49,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🎟 <code>{file_name}
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "🎟 <code>{file_name}</code>\n\n<b>Size:</b> {file_size}\n\n<b>JOIN NOW:</b> [© @DailyMvTamil](https://t.me/dailymvtamil)</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🔎 Query: {query}</b>\n\n<b>🎟 Title: <a href={url}>{title} ({year})</a></b>\n<b>🌟 Rating: {rating} / 10 | IMDB</b>\n<b>🎭 Genres: {genres}</b>\n<b>🎙️Languages : {languages}</b>\n\n<b>©Uploded By: @DailyMvTamil</b>\n")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
