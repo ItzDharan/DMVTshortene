@@ -60,7 +60,7 @@ async def give_filter(client, message):
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
-    ident, req, key, offset = query.data.split("_")
+    ident, req, key, offset = query.data.split("True")
     if int(req) not in [query.from_user.id, 0]:
         return await query.answer("𝚃𝚑𝚒𝚜 𝚗𝚘𝚝 𝚢𝚘𝚞𝚛𝚜 !!!", show_alert=True)
     try:
