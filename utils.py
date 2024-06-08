@@ -10,6 +10,7 @@ import re
 import os
 from datetime import datetime
 from typing import List
+from spellchecker import Spellchecker
 from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
@@ -160,6 +161,7 @@ async def broadcast_messages(user_id, message):
         return False, "Error"
 
 async def search_gagala(text):
+    text = await check_spelling(text)
     usr_agent = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
         'Chrome/61.0.3163.100 Safari/537.36'
